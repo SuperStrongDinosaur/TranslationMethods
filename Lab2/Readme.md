@@ -1,8 +1,8 @@
 # Грамматика:
 
-* `S -> V WORD ( VARGROUPS ) WORD`
+* `S -> V WORD ( VARGROUPS : WORD`
 * `V -> function | procedure`
-* `VARGROUPS -> VARLIST: WORD VARGRROUPS`
+* `VARGROUPS -> VARLIST : WORD VARGRROUPS`
 * `VARGROUPS -> )`
 * `VARGROUPS -> ; VARGROUPS`
 * `VARLIST -> WORD, VARLIST`
@@ -20,9 +20,9 @@ WORD | Переменная или тип
 
 ## Устранение правового ветвления:
 
-* `S->V VARGROUPS`
-* `V->var`
-* `VARGROUPS -> VARLIST: WORD VARGRROUPS`
+* `S -> V WORD ( VARGROUPS : WORD`
+* `V->unction | procedure`
+* `VARGROUPS -> VARLIST : WORD VARGRROUPS`
 * `VARGROUPS -> )`
 * `VARGROUPS -> ; VARGROUPS`
 * `VARLIST -> WORDVARLIST'`

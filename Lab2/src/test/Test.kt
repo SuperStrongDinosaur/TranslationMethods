@@ -56,7 +56,7 @@ class ParserTester {
     }
 
     private fun declarationWrapper(stringBuilder: StringBuilder): String {
-        return "function " + generateWord() + "(" + stringBuilder.toString() + ")" + generateWord()
+        return "function " + generateWord() + "(" + stringBuilder.toString() + "):" + generateWord()
     }
 
     private fun typeGroup(varsAmount: Int): StringBuilder {

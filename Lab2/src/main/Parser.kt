@@ -22,7 +22,7 @@ class Parser @Throws(ParseException::class) constructor(s: String) {
                 val varGroups = VARGROUPS()
                 lex.nextToken()
                 val typeoffunc = WORD()
-                return Tree("S", v, name, LEFT_BRACKET_TREE, varGroups, typeoffunc)
+                return Tree("S", v, name, LEFT_BRACKET_TREE, varGroups, COLON_TREE, typeoffunc)
             }
             else -> throw AssertionError()
         }
