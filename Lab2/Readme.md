@@ -25,10 +25,10 @@ WORD | Переменная или тип
 * `VARGROUPS -> VARLIST: WORD VARGRROUPS`
 * `VARGROUPS -> )`
 * `VARGROUPS -> ; VARGROUPS`
-* `VARLIST->WORDVARLIST'`
-* `VARLIST'->, WORDVARLIST'`
-* `VARLIST'->eps`
-* `WORD->[A-Za-z]WORD`
+* `VARLIST -> WORDVARLIST'`
+* `VARLIST' -> , WORDVARLIST'`
+* `VARLIST' -> eps`
+* `WORD -> [A-Za-z]WORD`
 
 Нетерминал    | Значение
 ------------- | -------------
